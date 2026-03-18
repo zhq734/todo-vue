@@ -46,7 +46,22 @@
     "clearHistoryConfirm": "Clear all history?",
     "clearHistoryConfirmDesc": "This action cannot be undone",
     "clearHistorySuccess": "History cleared",
-    "clearHistoryError": "Failed to clear history"
+    "clearHistoryError": "Failed to clear history",
+    "exportTitle": "Export Tasks",
+    "exportDateFrom": "From",
+    "exportDateTo": "To",
+    "exportBtn": "Export Excel",
+    "importBtn": "Import Excel",
+    "importSuccess": "Import successful",
+    "importError": "Import failed, please check file format",
+    "exportSuccess": "Export successful",
+    "exportNoData": "No tasks in selected date range",
+    "colIndex": "No.",
+    "colTask": "Task",
+    "colTime": "Time",
+    "colPriority": "Priority",
+    "importConfirm": "Import will merge with existing tasks. Continue?",
+    "importDrop": "Click or drag Excel file here"
   },
   "zh": {
     "title": "待办任务",
@@ -95,6 +110,21 @@
     "clearHistoryConfirm": "清除所有历史记录？",
     "clearHistoryConfirmDesc": "此操作无法撤销",
     "clearHistorySuccess": "历史记录已清除",
-    "clearHistoryError": "清除历史记录失败"
+    "clearHistoryError": "清除历史记录失败",
+    "exportTitle": "导出任务",
+    "exportDateFrom": "开始日期",
+    "exportDateTo": "结束日期",
+    "exportBtn": "导出 Excel",
+    "importBtn": "导入 Excel",
+    "importSuccess": "导入成功",
+    "importError": "导入失败，请检查文件格式",
+    "exportSuccess": "导出成功",
+    "exportNoData": "所选日期范围内没有任务",
+    "colIndex": "序号",
+    "colTask": "任务名称",
+    "colTime": "时间",
+    "colPriority": "优先级",
+    "importConfirm": "导入将与现有任务合并，是否继续？",
+    "importDrop": "点击或拖拽 Excel 文件到此处"
   }
 }

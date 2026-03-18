@@ -3,11 +3,14 @@ import CalendarPanel from './components/CalendarPanel.vue'
 import TaskPanel from './components/TaskPanel.vue'
 import AppToast from './components/AppToast.vue'
 import ThemePicker from './components/ThemePicker.vue'
+import ImportExportDialog from './components/ImportExportDialog.vue'
+import { ref } from 'vue'
 import { useLang } from './composables/useLang'
 import { useToast } from './composables/useToast'
 
 const { t, currentLang, switchLanguage } = useLang()
 const { toast } = useToast()
+const showImportExport = ref(false)
 </script>
 
 <template>
@@ -16,6 +19,9 @@ const { toast } = useToast()
       <h1>{{ t('title') }}</h1>
       <div class="header-actions">
         <ThemePicker />
+        <button class="lang-toggle" @click="showImportExport = true">
+          📊 {{ currentLang === 'zh' ? '导入/导出' : 'Import/Export' }}
+        </button>
         <button class="lang-toggle" @click="switchLanguage">
           🌐 {{ currentLang === 'zh' ? 'EN' : '中文' }}
         </button>
@@ -28,6 +34,7 @@ const { toast } = useToast()
     </div>
 
     <AppToast :visible="toast.visible" :message="toast.message" :type="toast.type" />
+    <ImportExportDialog :show="showImportExport" @close="showImportExport = false" />
   </div>
 </template>
 

@@ -13,6 +13,12 @@ const langText = {
     weekNames: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
     viewMonth: '月', viewWeek: '周',
     statsTotal: '任务总数', statsDone: '已完成', statsPending: '待完成',
+    exportTitle: '导出任务', exportDateFrom: '开始日期', exportDateTo: '结束日期',
+    exportBtn: '导出 Excel', importBtn: '导入 Excel',
+    importSuccess: '导入成功', importError: '导入失败，请检查文件格式',
+    exportSuccess: '导出成功', exportNoData: '所选日期范围内没有任务',
+    importConfirm: '导入将与现有任务合并，是否继续？',
+    importDrop: '点击或拖拽 Excel 文件到此处',
   },
   en: {
     title: 'Todo List', calendarTitle: 'Calendar', myTasks: 'My Tasks',
@@ -25,6 +31,12 @@ const langText = {
     weekNames: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
     viewMonth: 'Month', viewWeek: 'Week',
     statsTotal: 'Total', statsDone: 'Done', statsPending: 'Pending',
+    exportTitle: 'Export Tasks', exportDateFrom: 'From', exportDateTo: 'To',
+    exportBtn: 'Export Excel', importBtn: 'Import Excel',
+    importSuccess: 'Import successful', importError: 'Import failed, please check file format',
+    exportSuccess: 'Export successful', exportNoData: 'No tasks in selected date range',
+    importConfirm: 'Import will merge with existing tasks. Continue?',
+    importDrop: 'Click or drag Excel file here',
   },
 }
 

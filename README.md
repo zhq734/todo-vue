@@ -90,16 +90,6 @@ npm run dev
 npm run build
 ```
 
----
-
-## 📸 截图说明
-
-> 截图存放在 `docs/screenshots/` 目录下，包含以下文件：
-> - `main.png` — 主界面
-> - `calendar.png` — 日历视图
-> - `tasks.png` — 任务列表
-> - `priority.png` — 优先级展示
-> - `theme.png` — 主题切换
 
 ---
 
