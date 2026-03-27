@@ -1,4 +1,4 @@
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import type { Priority } from '../types'
 import useTodoStore from '../stores/todo'
 import { useLang } from './useLang'
@@ -37,6 +37,12 @@ export function useTaskActions() {
     if (ok) { showToast(t('toastEditSuccess'), 'success'); editingIndex.value = null }
   }
   function cancelEdit() { editingIndex.value = null }
+
+  // 切换日期时退出编辑态，避免跨日期保留临时编辑内容
+  watch(selectedDate, () => {
+    cancelEdit()
+    editText.value = ''
+  })
 
   // ── 优先级 ────────────────────────────────────────────
   function setPriority(index: number, priority: Priority) { store.setPriority(selectedDate.value, index, priority) }
